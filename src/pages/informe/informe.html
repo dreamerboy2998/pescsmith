@@ -1,0 +1,46 @@
+<!--
+  Generated template for the InformePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Subida de Imagen</ion-title>
+    <ion-buttons end >
+        <button ion-button icon-only (click)="salir()"><ion-icon name="close"></ion-icon></button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <!-- Botones de subir imágenes -->
+  <div>
+      <h2>Capture por favor una foto del release</h2>
+      <ion-label id="infoselec"></ion-label>
+      <div><p id="nomFoto"></p></div>
+      <div id="imagen"></div>
+      <div><p id="porcentaje"></p></div>
+      <button ion-button round icon-only (click)="capturarImagen()" id="btncap"><ion-icon name="camera"></ion-icon><span id="capturar">Capturar &nbsp;&nbsp;&nbsp;</span></button>
+      <button ion-button round icon-only (click)="cargarImagen()" id="btncarg"><ion-icon name="folder"></ion-icon><span id="cargar">Cargar &nbsp;&nbsp;&nbsp;</span></button>
+  </div>
+  <!-- Botones de subir imágenes -->
+  
+  <!-- Resultados Geolocalización -->
+  <div padding>
+    <div id="coorconfi"></div>
+  </div>
+  <!-- Resultados Geolocalización -->
+
+  <!-- Botón submit -->
+  <div padding id="submitbtn">
+    <button ion-button round (click)="atras()">Atras</button>
+    <button ion-button round (click)="finalizarInforme()" id="btnsubmit">Enviar datos</button>  
+  </div>
+  <!-- Botón submit -->
+
+</ion-content>

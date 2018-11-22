@@ -1,0 +1,7 @@
+{
+  "name": "PescSmith",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

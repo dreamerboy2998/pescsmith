@@ -1,0 +1,52 @@
+<!--
+  Generated template for the FormInicialPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Creando informe</ion-title>
+    <ion-buttons end >
+      <button ion-button icon-only (click)="salir()"><ion-icon name="close"></ion-icon></button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <h5>Llene los campos con los datos correspondientes!</h5>
+  <!-- Forma inicial de datos -->
+  
+  <ion-list>
+
+    <ion-item>
+      <ion-label floating>Duración de la pesca <span style="color:red;">*</span></ion-label>
+      <ion-input type="text" [(ngModel)]="duracion" id="duracion"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label floating>Nombre de su localización actual <span style="color:red;">*</span></ion-label>
+      <ion-input type="text" [(ngModel)]="nomLocacion" id="nomCapitan"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Nombre del Pescador</ion-label>
+      <ion-input type="text" [(ngModel)]="nomPescador" id="nomPescador"></ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label floating>Nombre de la Embarcación</ion-label>
+      <ion-input type="text" [(ngModel)]="nomEmbarcacion" id="nomEmbarcacion"></ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label floating>Nombre del Capitán</ion-label>
+      <ion-input type="text" [(ngModel)]="nomCapitan" id="nomCapitan"></ion-input>
+    </ion-item>
+  </ion-list>
+  <!-- Forma inicial de datos -->
+  <button ion-button round (click)="continuar()">Continuar</button>
+</ion-content>

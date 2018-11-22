@@ -1,0 +1,25 @@
+<!--
+  Generated template for the InicioPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Términos</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <h5>Antes de continuar debe tener en cuenta: </h5>
+  <ul style="list-style: none; margin-left: 0%; padding-left: 0%;">
+    <li icon-only><ion-icon name="checkmark-circle"></ion-icon>   Tener activado el servicio de Ubicación</li>
+    <li icon-only><ion-icon name="checkmark-circle"></ion-icon>   Tener el Wifi encendido, y datos móviles así no esté conectado a internet</li>
+  </ul>
+  <h6>Esto se le solicita para tener una correcta captura de los datos para los informes que esté creando</h6>
+  <a (click)="presentAlert()">Leer Más</a>
+  <button ion-button round icon-only (click)="continuar()"><ion-icon name="checkmark"></ion-icon>Aceptar y Continuar &nbsp;&nbsp;&nbsp;</button>
+</ion-content>
